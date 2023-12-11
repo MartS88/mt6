@@ -1,0 +1,34 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+footer::after {
+  position: absolute;
+  background: url("../../assets/ellipse510.png") center/cover no-repeat;
+  width: 101%;
+  height: 53%;
+  content: "";
+  top: -58%;
+  left: -0.6%;
+  border-radius: 32px;
+  transform: rotate(0deg);
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 32px;
+  background-clip: content-box;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

@@ -1,0 +1,143 @@
+.popup {
+  width: 440px;
+  height: 596px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #CA40FB;
+  padding: 32px;
+  z-index: 30;
+}
+.popup .popup_block {
+  margin: 0 auto;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.popup .popup_block .close {
+  margin-left: 300px;
+  cursor: pointer;
+}
+.popup .popup_block span {
+  font-family: "Prompt";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.popup .popup_block div {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.popup .popup_block div p {
+  padding: 0;
+  margin: 0;
+  width: 338px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #5E6B74;
+  border: none;
+}
+.popup .popup_block div .email {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #EDF1F4;
+}
+.popup .popup_block .buttons_block {
+  display: flex;
+  align-items: center;
+}
+.popup .popup_block .buttons_block button {
+  width: 102px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px 18px 16px 18px;
+  background: #8A24F3;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.popup .popup_block .buttons_block .close_button {
+  background: transparent;
+  color: #8A24F3;
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    transform: translateY(15%);
+    width: 328px;
+    height: 488px;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .popup .popup_block {
+    width: 288px;
+    height: 380px;
+    gap: 20px;
+  }
+  .popup .popup_block .close {
+    margin-left: auto;
+  }
+  .popup .popup_block span {
+    font-family: "Prompt";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .popup .popup_block div {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .popup .popup_block div p {
+    padding: 0;
+    margin: 0;
+    width: 288px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #5E6B74;
+  }
+  .popup .popup_block div .email {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    color: #EDF1F4;
+  }
+  .popup .popup_block .buttons_block {
+    display: flex;
+    align-items: center;
+  }
+  .popup .popup_block .buttons_block .close_button {
+    background: transparent;
+    color: #F0A719;
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=popup.module.css.map */
