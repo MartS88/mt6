@@ -1,0 +1,68 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #171E27;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 130px 0px 130px;
+}
+
+.flag-dropdown {
+  margin-left: 10px;
+}
+.flag-dropdown .selected-flag {
+  width: 24px;
+}
+.flag-dropdown .country-list {
+  overflow-y: auto;
+}
+.flag-dropdown .country-list .form_control {
+  padding: 0 !important;
+}
+.flag-dropdown .country {
+  background: #5E6B74;
+}
+.react-tel-input .form-control {
+  padding-block-start: 18.5px !important;
+  padding-inline-end: 14px !important;
+  padding-inline-start: 60px !important;
+  padding-left: 70px !important;
+  padding-right: 14px !important;
+  padding-top: 18.5px !important;
+}
+
+.react-tel-input .country-list {
+  transform: translate(-4%, 5%);
+  font-size: 1rem;
+  text-align: left;
+  max-height: 100px;
+  overflow-y: auto;
+  transition: all 0.1s ease;
+}
+.react-tel-input .country-list.active {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
