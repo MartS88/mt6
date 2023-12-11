@@ -12,13 +12,13 @@ const App = () => {
 
 
         <div className='container'>
-            <div className='wrapper'>
+
                 <Header />
 
                 <Main/>
 
                 <Footer/>
-            </div>
+
 
         </div>
 

@@ -113,8 +113,6 @@ const FooterForm = () => {
 
     }, [firstNameError, lastNameError, emailError, phoneNumberError,]);
 
-
-
     const [popUpIsActive, setPopUpIsActive] = useState(false)
     const submitHandler = (e) => {
         e.preventDefault()
@@ -145,7 +143,7 @@ const FooterForm = () => {
                 onSubmit={submitHandler}>
 
                 <h3 className={s.footer_form_title}>
-                    Enjoy and get you bonuse.
+                    Enjoy. Learn. Trade.
                 </h3>
 
                 <div className={s.inputs_block}>
@@ -273,10 +271,10 @@ const FooterForm = () => {
 
             {!isMobile
 
-                ? <img src={require('../../../assets/safe.png')} draggable={false}/>
+                ? <img src={require('../../../assets/footer_img.png')} draggable={false} className={s.footer_form_img}/>
 
 
-                : <img src={require('../../../assets/safe_mobile.png')} draggable={false} className={s.safe}/>
+                : <img src={require('../../../assets/footer_img_mobile.png')} draggable={false} className={s.footer_form_img}/>
 
             }
 

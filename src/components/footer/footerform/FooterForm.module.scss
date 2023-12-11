@@ -1,7 +1,4 @@
 
-img {
-  margin-top: auto;
-}
 
 .popup_container {
 
@@ -14,42 +11,23 @@ img {
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 25;
+  z-index: 10;
 }
 
 .form_back {
 
   display: flex;
   justify-content: space-between;
+  gap: 50px;
   width: 100%;
-  height: 642px;
+  height: 580px;
   border-radius: 32px;
-  background: radial-gradient(96.31% 1246.74% at 97.29% 4.76%, #1F2731 0%, rgba(144, 19, 188, 0) 100%);
+  background: linear-gradient(0deg, #1F2731, #1F2731),
+  linear-gradient(83.11deg, rgba(138, 139, 142, 0.1) 3.83%, rgba(239, 239, 239, 0.1) 59.24%, rgba(84, 85, 88, 0.1) 77.71%);
   padding: 32px;
   overflow: hidden;
   margin-bottom: 120px;
-  z-index: 20;
   position: relative;
-
-  &::after {
-    position: absolute;
-    background: url('../../../assets/ellipse510.png') center/cover no-repeat;
-    width: 100%;
-    height: 150%;
-    content: '';
-    top: -20%;
-    left: 0%;
-    border-radius: 32px;
-    transform: rotate(0deg);
-    z-index: -1;
-    pointer-events: none;
-    border-radius: 32px;
-    background-clip: content-box;
-  }
-
-  img {
-    margin-top: auto;
-  }
 
 
   form {
@@ -70,7 +48,6 @@ img {
       line-height: 52px;
       letter-spacing: 0.4px;
       color: #FFFFFF;
-      margin-bottom: 50px;
     }
 
     p {
@@ -95,7 +72,7 @@ img {
         input {
           width: 311px;
           height: 56px;
-          border-radius: 8px;
+          border-radius: 16px;
           border: 1px solid #D9DEE2;
           padding: 16px;
           font-family: 'Roboto';
@@ -210,6 +187,14 @@ span {
   cursor: wait !important;
 }
 
+.footer_form_img {
+    transform: translateY(7%);
+
+}
+
+
+
+
 
 @media screen and (max-width: 767px) {
 
@@ -221,23 +206,9 @@ span {
     gap: 0px;
     padding: 15px;
     margin-bottom: 0px;
-    background: linear-gradient(20.52deg, #070708 0.72%, #2A1F02 30.58%, #070708 58.64%);
+    background: #1F2731;
 
-    &::after {
-      position: absolute;
-      background: url('../../../assets/ellipse510.png') center/cover no-repeat;
-      width: 100%;
-      height: 150%;
-      content: '';
-      top: -50%;
-      left: 0%;
-      border-radius: 32px;
-      transform: rotate(0deg);
-      z-index: -1;
-      pointer-events: none;
-      border-radius: 32px;
-      background-clip: content-box;
-    }
+
 
     form {
       height:auto;
@@ -260,7 +231,6 @@ span {
         line-height: 40px;
         letter-spacing: 0.4px;
         color: #FFFFFF;
-        margin-bottom:20px;
         text-align:start;
       }
 
@@ -304,7 +274,7 @@ span {
             align-items: flex-start;
 
             label {
-              margin-left: 10px;
+              margin-left: 0px;
               transform: translateY(15%);
               font-family: 'Roboto';
               font-weight: 500;
@@ -335,7 +305,7 @@ span {
 
         width: 296px;
         height: 56px;
-        border-radius: 16px;
+        border-radius: 8px;
         padding: 16px 0px 16px 0px;
         display: flex;
         justify-content: center;
@@ -388,10 +358,6 @@ span {
     margin-top: 16px;
   }
 
-  .safe {
-    margin-top: auto;
-    transform: translate(5%,5%);
 
-  }
 }
 

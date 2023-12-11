@@ -1,15 +1,11 @@
 @import "reset.css";
-
-
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
 }
 
 
@@ -24,24 +20,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0px 130px 0px 130px;
-
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 1180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 .flag-dropdown {
-
   margin-left: 10px;
   .selected-flag {
     width: 24px;
-
   }
 
   .country-list {
@@ -97,22 +85,14 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
-    overflow-x: hidden;
+
+
   }
-
-
   .container {
     overflow-x: hidden;
     width: 100%;
-    padding: 0;
-  }
-  .wrapper, {
-    overflow-x: hidden;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0px 16px 0px 16px;
-  }
 
+  }
 }
 
 
