@@ -2,7 +2,9 @@ import s from '../main/Main.module.scss'
 import {scrollToElement} from "../utils/scrollUtils";
 
 const MetaTrader0 = () => (
-    <div className={s.metatrader}>
+    <div
+        id='metatrader'
+        className={s.metatrader}>
         <img src={require('../../assets/Ellipse510.png')} alt=""/>
         <div className={s.metatrader_block}>
             <h3 className={s.metatrader_block_title}>
@@ -37,7 +39,9 @@ const MetaTrader0 = () => (
 
 
 const MetaTrader1 = () => (
-    <div className={s.metatrader}>
+    <div
+        id='metatrader'
+        className={s.metatrader}>
         <img src={require('../../assets/Ellipse511.png')} alt=""/>
         <div className={s.metatrader_block}>
             <h3 className={s.metatrader_block_title}>
@@ -69,7 +73,9 @@ const MetaTrader1 = () => (
 
 const MetaTrader2 = () => (
 
-    <div className={s.metatrader}>
+    <div
+        id='metatrader'
+        className={s.metatrader}>
         <img src={require('../../assets/Ellipse512.png')} alt=""/>
         <div className={s.metatrader_block}>
             <h3 className={s.metatrader_block_title}>
@@ -98,7 +104,9 @@ const MetaTrader2 = () => (
 
 const MetaTrader3 = () => (
 
-    <div className={s.metatrader}>
+    <div
+        id='metatrader'
+        className={s.metatrader}>
         <img src={require('../../assets/Ellipse513.png')} alt=""/>
         <div className={s.metatrader_block}>
             <h3 className={s.metatrader_block_title}>

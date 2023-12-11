@@ -9,8 +9,13 @@ const Main = () => {
 
     const [activeItem, setActiveItem] = useState(0)
 
+
     const itemHandler = (item) => {
         setActiveItem(item)
+        const element = document.getElementById('metatrader');
+        element.scrollIntoView({
+            behavior: 'smooth',
+        });
     }
 
     return (
@@ -18,7 +23,9 @@ const Main = () => {
 
             <h3 className={s.main_title}>Use the platform that suits you best</h3>
 
-            <div className={s.main_choose_line}>
+            <div
+
+                className={s.main_choose_line}>
 
                 <div className={`${s.main_choose_line_item} ${activeItem === 0 ? s.active : ''}`}
                      onClick={() => itemHandler(0)}
