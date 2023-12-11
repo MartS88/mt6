@@ -188,7 +188,7 @@ span {
 }
 
 .footer_form_img {
-    transform: translateY(7%);
+    transform: translate(7%,7%);
 
 }
 
@@ -359,5 +359,9 @@ span {
   }
 
 
+  .footer_form_img {
+    transform: translate(0%,7%);
+
+  }
 }
 
