@@ -65,7 +65,7 @@ main .metatrader {
 }
 main .metatrader img {
   width: 450px;
-  max-height: 370px;
+  height: 370px;
   margin-top: auto;
 }
 main .metatrader .metatrader_block {
