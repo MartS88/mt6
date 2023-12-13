@@ -269,7 +269,7 @@ main .main_icons_block .main_icons .main_icon .about {
   main .main_choose_line_div .main_choose_line .active {
     height: 100%;
     background: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: "Roboto";
     font-size: 14px;
     line-height: 20px;
