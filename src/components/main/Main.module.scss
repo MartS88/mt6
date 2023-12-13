@@ -246,7 +246,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: auto;
+
 
     .main_title {
       width: 328px;
@@ -257,6 +257,7 @@ main {
     }
 
     .main_choose_line {
+
       width: 955px;
       height: 40px;
       border-radius: 8px;

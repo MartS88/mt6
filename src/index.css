@@ -58,6 +58,76 @@ body {
   display: block;
 }
 
+.swiper {
+  transform: translateX(1%);
+  width: 720px;
+  position: relative;
+  height: 50px;
+  border-radius: 12px;
+  padding: 4px;
+  background: #1F2731;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.swiper .swiper-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.swiper .swiper-slide {
+  width: auto;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  background: transparent;
+  color: #BFC6CC;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.swiper .swiper-slide.swiper-slide-active {
+  width: auto !important;
+}
+.swiper .swiper-slide.swiper-slide-next {
+  width: auto !important;
+}
+.swiper .swiper-slide .active {
+  width: auto;
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  padding: 6px 8px 6px 8px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.7;
+  width: 10px;
+  margin: 0 8px;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #434D56;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     overflow-x: hidden;
