@@ -1,16 +1,11 @@
 import React, {useState} from 'react';
 import s from './Main.module.scss'
-import {useMediaQuery} from "react-responsive";
 import {MetaTrader0, MetaTrader1, MetaTrader2, MetaTrader3} from '../metatrader/metatrader'
-import Slider from "../swiper/Swiper";
+
 
 const Main = () => {
 
-    const isMobile = useMediaQuery({maxWidth: 765});
-
     const [activeItem, setActiveItem] = useState(0)
-
-
     const itemHandler = (item) => {
         setActiveItem(item)
         const element = document.getElementById('metatrader');
@@ -24,10 +19,8 @@ const Main = () => {
 
             <h3 className={s.main_title}>Use the platform that suits you best</h3>
 
-            {!isMobile
-
-                ?   <div
-
+            <div  className={s.main_choose_line_div}>
+             <div
                     className={s.main_choose_line}>
 
                     <div className={`${s.main_choose_line_item} ${activeItem === 0 ? s.active : ''}`}
@@ -56,17 +49,13 @@ const Main = () => {
 
                 </div>
 
-                :  <Slider activeItem={activeItem} itemHandler={itemHandler}/>
 
-            }
-
-
+                </div>
 
             {activeItem === 0 && <MetaTrader0/>}
             {activeItem === 1 && <MetaTrader1/>}
             {activeItem === 2 && <MetaTrader2/>}
             {activeItem === 3 && <MetaTrader3/>}
-
 
             <div className={s.main_icons_block}>
                 <h3 className={s.main_icons_block_title}>

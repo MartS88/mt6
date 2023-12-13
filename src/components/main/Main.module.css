@@ -15,18 +15,24 @@ main .main_title {
   line-height: 52px;
   color: #FFFFFF;
 }
-main .main_choose_line {
+main .main_choose_line_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main_choose_line_div .main_choose_line {
   width: 980px;
   height: 56px;
   border-radius: 12px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
   padding: 4px;
   background: #1F2731;
 }
-main .main_choose_line .main_choose_line_item {
+main .main_choose_line_div .main_choose_line .main_choose_line_item {
   width: 231px;
   height: 20px;
   padding: 14px 12px 14px 12px;
@@ -39,9 +45,12 @@ main .main_choose_line .main_choose_line_item {
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .main_choose_line .active {
-  height: 100%;
+main .main_choose_line_div .main_choose_line .active {
+  height: 48px;
   background: #FFFFFF;
   border-radius: 12px;
   width: 231px;
@@ -51,6 +60,9 @@ main .main_choose_line .active {
   line-height: 20px;
   letter-spacing: 0.5px;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .metatrader {
   overflow: hidden;
@@ -214,7 +226,7 @@ main .main_icons_block .main_icons .main_icon .about {
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
   main .main_title {
@@ -224,19 +236,24 @@ main .main_icons_block .main_icons .main_icon .about {
     color: #FFFFFF;
     text-align: center;
   }
-  main .main_choose_line {
-    width: 955px;
+  main .main_choose_line_div {
+    width: 100%;
+  }
+  main .main_choose_line_div .main_choose_line {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 720px;
     height: 40px;
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
     background: #1F2731;
     margin-bottom: 10px;
-    transform: translateX(33%);
+    transform: translateX(0%);
   }
-  main .main_choose_line .main_choose_line_item {
+  main .main_choose_line_div .main_choose_line .main_choose_line_item {
     height: auto;
     padding: 14px 12px 14px 12px;
     font-family: "Roboto";
@@ -249,7 +266,7 @@ main .main_icons_block .main_icons .main_icon .about {
     cursor: pointer;
     transition: all 0.1s ease;
   }
-  main .main_choose_line .active {
+  main .main_choose_line_div .main_choose_line .active {
     height: 100%;
     background: #FFFFFF;
     border-radius: 12px;

@@ -17,46 +17,57 @@ main {
     color: #FFFFFF;
   }
 
-  .main_choose_line {
-    width: 980px;
-    height: 56px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 4px;
-    background: #1F2731;
+   .main_choose_line_div {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .main_choose_line {
+       width: 980px;
+       height: 56px;
+       border-radius: 12px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 16px;
+       padding: 4px;
+       background: #1F2731;
 
-    .main_choose_line_item {
-      width: 231px;
-      height: 20px;
-      padding: 14px 12px 14px 12px;
-      font-family: 'Roboto';
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.5px;
-      background: transparent;
-      color: #BFC6CC;
-      text-align: center;
-      cursor: pointer;
-      transition: all .1s ease;
-    }
+       .main_choose_line_item {
+         width: 231px;
+         height: 20px;
+         padding: 14px 12px 14px 12px;
+         font-family: 'Roboto';
+         font-size: 14px;
+         line-height: 20px;
+         letter-spacing: 0.5px;
+         background: transparent;
+         color: #BFC6CC;
+         text-align: center;
+         cursor: pointer;
+         transition: all .1s ease;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
 
-    .active {
-      height: 100%;
-      background: #FFFFFF;
-      border-radius: 12px;
-      width: 231px;
-      font-weight: 500;
-      font-family: 'Roboto';
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.5px;
-      color: black;
-    }
-  }
-
+       .active {
+         height: 48px;
+         background: #FFFFFF;
+         border-radius: 12px;
+         width: 231px;
+         font-weight: 500;
+         font-family: 'Roboto';
+         font-size: 14px;
+         line-height: 20px;
+         letter-spacing: 0.5px;
+         color: black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+     }
+   }
 
   .metatrader {
     overflow: hidden;
@@ -244,7 +255,7 @@ main {
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
 
@@ -256,18 +267,23 @@ main {
       text-align: center;
     }
 
-    .main_choose_line {
 
-      width: 955px;
+    .main_choose_line_div {
+      width: 100%;
+
+    .main_choose_line {
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 720px;
       height: 40px;
       border-radius: 8px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      gap: 10px;
+      gap: 2px;
       background: #1F2731;
       margin-bottom: 10px;
-      transform: translateX(33%);
+      transform: translateX(0%);
 
       .main_choose_line_item {
         height: auto;
@@ -297,7 +313,7 @@ main {
         align-items: center;
       }
     }
-
+    }
 
     .metatrader {
       overflow: hidden;
